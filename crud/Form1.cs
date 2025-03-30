@@ -86,7 +86,7 @@ namespace crud
             var pessoa = new Pessoa(Convert.ToInt32(txtId.Text), txtNome.Text, txtEmail.Text, txtCpf.Text);
 
             var pessoaRepositorio = new PessoaRepositorio();
-
+            
             pessoaRepositorio.Atualizar(pessoa);
 
             LimparCampos();
